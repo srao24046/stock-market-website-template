@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Dhan Traders - Stock Market Platform</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                        <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="http://127.0.0.1:8080/KuberGroup/clientregistration.html"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="http://127.0.0.1:8080/KuberGroup/clientlogin.html"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="http://127.0.0.1:8080/KuberGroup/clientprofile.jsp" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                                <a href="http://127.0.0.1:8080/KuberGroup/ClientLogout" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>DhanTrader</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="blog.html" class="nav-item nav-link">Blogs</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Pages</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Our Features</a>
+                                <a href="team.html" class="dropdown-item">Our team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="offer.html" class="dropdown-item">Our offer</a>
+                                <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Get Started</a>
+                </div>
+            </nav>
+
+            <!-- Carousel Start -->
+            <div class="header-carousel owl-carousel">
+                <div class="header-carousel-item">
+                    <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row gy-0 gx-5">
+                                <div class="col-lg-0 col-xl-5"></div>
+                                <div class="col-xl-7 animated fadeInLeft">
+                                    <div class="text-sm-center text-md-end">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To DhanTrader</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">Invest your money with higher return</h1>
+                                        <p class="mb-5 fs-5">DhanTrader is your trusted partner in the stock market, offering smart investment tools, real-time market insights, and expert analysis to help you grow your wealth. Whether you're a beginner or an experienced trader, our platform is designed to make investing easy, secure, and profitable.
+                                        </p>
+                                        <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                            <h2 class="text-white me-2">Follow Us:</h2>
+                                            <div class="d-flex justify-content-end ms-2">
+                                                <a class="btn btn-md-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-carousel-item">
+                    <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row g-5">
+                                <div class="col-12 animated fadeInUp">
+                                    <div class="text-center">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To DhanTrader</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">Invest your money with higher return</h1>
+                                        <p class="mb-5 fs-5">Join DhanTrader — a powerful platform built for smart investors. Stay ahead of the market with real-time data, personalized insights, and seamless trading tools. Let your money work smarter and achieve your financial goals with confidence.                                        </p>
+                                        <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h2 class="text-white me-2">Follow Us:</h2>
+                                            <div class="d-flex justify-content-end ms-2">
+                                                <a class="btn btn-md-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Abvout Start -->
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div>
+                            <h4 class="text-primary">About Us</h4>
+                            <h1 class="display-5 mb-4">Discover DhanTrader — Your Gateway to Smarter Investing</h1>
+                            <p class="mb-4">
+                            At DhanTrader, we are committed to empowering individuals with the tools and knowledge needed to navigate the stock market confidently. Our mission is to simplify investing and help you unlock opportunities that lead to long-term financial growth.
+                            </p>
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <div class="d-flex">
+                                        <div><i class="fas fa-lightbulb fa-3x text-primary"></i></div>
+                                        <div class="ms-4">
+                                            <h4>Business Consulting</h4>
+                                            <p>We provide expert financial and investment consulting to help you make informed decisions in the stock market. Maximize your returns with strategies tailored to your business goals.</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <div class="d-flex">
+                                        <div><i class="bi bi-bookmark-heart-fill fa-3x text-primary"></i></div>
+                                        <div class="ms-4">
+                                            <h4>Years of Expertise</h4>
+                                            <p>With years of experience in the stock market industry, DhanTrader brings deep insights, proven strategies, and trusted guidance to help you invest with confidence.</p>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="btn btn-primary rounded-pill py-3 px-5 flex-shrink-0">Discover Now</a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex">
+                                        <i class="fas fa-phone-alt fa-2x text-primary me-4"></i>
+                                        <div>
+                                            <h4>Call Us</h4>
+                                            <p class="mb-0 fs-5" style="letter-spacing: 1px;">+01234567890</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-primary rounded position-relative overflow-hidden">
+                            <img src="img/about-2.png" class="img-fluid rounded w-100" alt="">
+                            
+                            <div class="" style="position: absolute; top: -15px; right: -15px;">
+                                <img src="img/about-3.png" class="img-fluid" style="width: 150px; height: 150px; opacity: 0.7;" alt="">
+                            </div>
+                            <div class="" style="position: absolute; top: -20px; left: 10px; transform: rotate(90deg);">
+                                <img src="img/about-4.png" class="img-fluid" style="width: 100px; height: 150px; opacity: 0.9;" alt="">
+                            </div>
+                            <div class="rounded-bottom">
+                                <img src="img/about-5.jpg" class="img-fluid rounded-bottom w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Services Start -->
+        <div class="container-fluid service pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Services</h4>
+                    <h1 class="display-5 mb-4">Explore Our Top-Notch Investment Services</h1>
+                    <p class="mb-0">
+                    At DhanTrader, we offer a wide range of services including stock trading, portfolio management, market analysis, and financial consulting. Our goal is to provide you with the best tools and guidance to maximize your investment potential.
+                    </p>                    
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-1.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Strategy Consulting</a>
+                                <p class="mb-4">
+                                Unlock your financial potential with our expert strategy consulting. At DhanTrader, we help you build smart, data-driven investment strategies tailored to your goals and risk appetite.
+                                </p>                                
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-2.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Financial Advisory</a>
+                                <p class="mb-4">
+                                Get personalized financial advice from seasoned experts. DhanTrader’s advisory services are designed to help you make informed decisions, optimize your investments, and achieve long-term financial success.
+                                </p>                                
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-3.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Portfolio Management</a>
+<p class="mb-4">
+Our expert team at DhanTrader offers professional portfolio management services to help you diversify your investments, minimize risk, and maximize returns—so you can grow your wealth with confidence.
+</p>
+
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-4.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Supply Optimization</a>
+                                <p class="mb-4">
+                                Optimize your financial resources with DhanTrader’s supply chain investment strategies. We help businesses streamline operations, reduce costs, and enhance profitability through smart financial planning and resource management.
+                                </p>                                
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-5.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">HR Consulting</a>
+                                <p class="mb-4">
+                                Empower your organization with expert HR consulting from DhanTrader. We assist businesses in building effective teams, improving workforce strategies, and aligning talent management with business goals for sustainable growth.
+                                </p>                                
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-6.jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            </div>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Marketing Consulting</a>
+                                <p class="mb-4">
+                                Boost your brand visibility and attract the right audience with DhanTrader’s marketing consulting services. We craft data-driven strategies to help financial businesses and startups grow their presence and achieve measurable results.
+                                </p>                                
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        <!-- Features Start -->
+        <div class="container-fluid feature pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Features</h4>
+                    <h1 class="display-5 mb-4">Connecting investors, insights, and innovation for smarter growth</h1>
+                    <p class="mb-0">
+                    DhanTrader offers a powerful suite of features including real-time market updates, expert analysis, personalized portfolio tracking, and secure trading tools — all designed to simplify investing and maximize your returns.
+                    </p>                    
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-chart-line fa-4x text-primary"></i>
+                            </div>
+                            <h4>Global Management</h4>
+                            <p class="mb-4">
+                            DhanTrader supports global investors with expert financial strategies, real-time insights, and scalable solutions. We help you manage assets across markets with confidence, efficiency, and a global perspective.
+                            </p>
+                            
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-university fa-4x text-primary"></i>
+                            </div>
+                            <h4>Corporate Banking</h4>
+                            <p class="mb-4">
+                            DhanTrader offers tailored corporate banking solutions to support your business growth. From investment advisory to capital management, we help companies optimize their financial operations and make smarter decisions.
+                            </p>
+                            
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-file-alt fa-4x text-primary"></i>
+                            </div>
+                            <h4>Asset Management</h4>
+                            <p class="mb-4">
+                            Maximize the value of your investments with DhanTrader’s expert asset management services. Our team ensures strategic portfolio allocation, risk mitigation, and continuous growth tailored to your financial goals.
+                            </p>
+                            
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-hand-holding-usd fa-4x text-primary"></i>
+                            </div>
+                            <h4>Investment Banking</h4>
+                            <p class="mb-4">
+                            At DhanTrader, our investment banking services are designed to support mergers, acquisitions, fundraising, and strategic financial planning. We connect businesses with capital and opportunities to drive impactful growth.
+                            </p>
+                            
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- Offer Start -->
+        <div class="container-fluid offer-section pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Offer</h4>
+                    <h1 class="display-5 mb-4">Benefits We Offer</h1>
+                    <p class="mb-0">
+                    At DhanTrader, we provide more than just a platform — we offer value-driven benefits such as low brokerage fees, advanced trading tools, expert market insights, and personalized support to help you grow your wealth efficiently and confidently.
+                    </p>
+                    
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="nav nav-pills bg-light rounded p-5">
+                            <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
+                                <h5 class="mb-0">Lending money for investment of your new projects</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
+                                <h5 class="mb-0">Lending money for investment of your new projects</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
+                                <h5 class="mb-0">Mobile payment is more flexible and easy for all investors</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-0" data-bs-toggle="pill" href="#collapseFour">
+                                <h5 class="mb-0">all transaction is kept free for the member of pro traders</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="tab-content">
+                            <div id="collapseOne" class="tab-pane fade show p-0 active">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-1.jpg" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">The stock market provides a venue for building financial freedom</h1>
+                                        <p class="mb-4">
+                                        At DhanTrader, we believe the stock market is more than just numbers—it's a gateway to financial growth, wealth creation, and long-term security. With the right tools and guidance, anyone can turn their investments into opportunities.
+                                        </p>
+                                        
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseTwo" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-2.jpg" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">The Stock Market Provides a Venue for Growth and Opportunity</h1>
+<p class="mb-4">
+The stock market is a powerful platform where individuals and businesses can grow wealth, diversify assets, and secure their financial future. At DhanTrader, we make investing simple, accessible, and rewarding for everyone—from beginners to seasoned investors.
+</p>
+
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-3.jpg" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">The Stock Market Provides a Venue for Building Wealth</h1>
+                                        <p class="mb-4">
+                                        The stock market opens doors to endless financial possibilities. At DhanTrader, we empower you to invest wisely, manage risk, and grow your portfolio with confidence through expert insights and powerful trading tools.
+                                        </p>
+                                        
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapseFour" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-4.jpg" class="img-fluid w-100 rounded" alt="">
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">The Stock Market Provides a Venue to Grow, Invest, and Prosper</h1>
+                                        <p class="mb-4">
+                                        The stock market isn’t just a place for trading — it’s where your financial journey begins. At DhanTrader, we make it easier for you to participate, understand, and succeed in the market through powerful tools, expert guidance, and real-time insights.
+                                        </p>
+                                        
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Offer End -->
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Blog & News</h4>
+<h1 class="display-5 mb-4">Articles for Pro Traders</h1>
+<p class="mb-0">
+Stay ahead of the market with expert insights, technical analysis, and the latest financial news. Our blog at DhanTrader is curated for seasoned traders who want to sharpen their strategies and stay informed in an ever-changing market.
+</p>
+
+                </div>
+                <div class="owl-carousel blog-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/service-1.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Dividend Stocks</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">Is Options Trading the Right Business for You?</a>
+                        <p class="mb-4">
+                        Options trading can be a powerful way to boost your portfolio, but it requires strategy, timing, and risk management. Discover how pro traders use options to maximize returns and how you can get started with the right approach.
+                        </p>                        
+                        <div class="d-flex align-items-center">
+                            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                            <div class="ms-3">
+                                <h5>Admin</h5>
+                                <p class="mb-0">October 9, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/service-2.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Non-Dividend Stocks</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">Starting an Options Trading Business?</a>
+                        <p class="mb-4">
+                        Explore the potential of options trading as a business model. Learn the strategies, tools, and mindset required to navigate market volatility and turn calculated risks into profitable opportunities.
+                        </p>                        
+                        <div class="d-flex align-items-center">
+                            <img src="img/testimonial-2.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                            <div class="ms-3">
+                                <h5>Admin</h5>
+                                <p class="mb-0">October 9, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/service-3.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Dividend Stocks</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">Is Options Trading the Right Path for Your Business?</a>
+                        <p class="mb-4">
+                        Options trading offers high reward potential—but with calculated risk. In this article, we break down how to approach it like a business, the tools you’ll need, and tips to stay ahead in a competitive market.
+                        </p>
+                        
+                        <div class="d-flex align-items-center">
+                            <img src="img/testimonial-3.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                            <div class="ms-3">
+                                <h5>Admin</h5>
+                                <p class="mb-0">October 9, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item p-4">
+                        <div class="blog-img mb-4">
+                            <img src="img/service-4.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="blog-title">
+                                <a href="#" class="btn">Non-Dividend Stocks</a>
+                            </div>
+                        </div>
+                        <a href="#" class="h4 d-inline-block mb-3">Options Trading Business?</a>
+<p class="mb-4">
+Thinking of turning your trading skills into a business? Options trading offers flexibility, leverage, and profit potential—if done right. Learn the fundamentals, strategies, and risks involved in building a successful options trading venture.
+</p>
+
+                        <div class="d-flex align-items-center">
+                            <img src="img/testimonial-1.jpg" class="img-fluid rounded-circle" style="width: 60px; height: 60px;" alt="">
+                            <div class="ms-3">
+                                <h5>Admin</h5>
+                                <p class="mb-0">October 9, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+
+        <!-- FAQs Start -->
+        <div class="container-fluid faq-section pb-5">
+            <div class="container pb-5 overflow-hidden">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">FAQs</h4>
+                    <h1 class="display-5 mb-4">Frequently Asked Questions</h1>
+                    <p class="mb-0">
+                    Have questions about investing, trading, or how DhanTrader works? We've compiled answers to the most common queries to help you make informed decisions and get the most out of your trading journey.
+                    </p>
+                    
+                </div>
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="accordion accordion-flush bg-light rounded p-5" id="accordionFlushSection">
+                
+                            <div class="accordion-item rounded-top">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        What Does This Tool Do?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">
+                                        This tool provides real-time trading data, helps analyze stock trends, and allows users to manage their investment portfolios efficiently from one place.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        What Are The Disadvantages Of Online Trading?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">
+                                        Online trading may lead to impulsive decisions due to market volatility. It also carries cybersecurity risks, and users may experience technical issues or delays during high traffic.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Is Online Trading Safe?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">
+                                        Yes, if you use a secure and regulated trading platform with strong encryption protocols, two-factor authentication, and proper user verification processes.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                        What Is Online Trading, And How Does It Work?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">
+                                        Online trading is the act of buying and selling financial instruments like stocks, bonds, or cryptocurrencies through internet-based platforms. Users place orders via apps or websites, which are executed on stock exchanges.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        Which App Is Best For Online Trading?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">
+                                        Popular trading apps include Zerodha (Kite), Upstox, Angel One, and Groww. Choose one based on features, brokerage fees, ease of use, and customer support.
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="accordion-item rounded-bottom">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                        How To Create A Trading Account?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushSection">
+                                    <div class="accordion-body">
+                                        You can open a trading account by signing up with a broker’s platform, submitting KYC documents like PAN card, Aadhaar, and bank proof, and completing the verification process. Most brokers offer instant account setup.
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>                
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-primary rounded">
+                            <img src="img/about-2.png" class="img-fluid w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQs End -->
+
+
+        <!-- Team Start -->
+        <div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Team</h4>
+                    <h1 class="display-5 mb-4">Meet Our Advisers</h1>
+                    <p class="mb-0">
+                        Get to know the experienced professionals behind our success. Our team of expert advisers brings years of industry knowledge, strategic insight, and a passion for helping you make smart investment decisions. From financial analysts to trading specialists, each member is dedicated to your growth and financial well-being.
+                    </p>
+                    
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="team-title">
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="team-icon">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="team-title">
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="team-icon">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="team-title">
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="team-icon">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="team-title">
+                                <h4 class="mb-0">David James</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="team-icon">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonial</h4>
+<h1 class="display-5 mb-4">What Our Clients Say</h1>
+<p class="mb-0">
+    Hear from our valued clients who have experienced exceptional service and expert financial guidance. Their words reflect our commitment to building lasting relationships and delivering real results that matter.
+</p>
+
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">
+                                "Working with this team has been an incredible experience. Their insights and dedication helped me make smarter financial decisions with confidence. Highly recommended!"
+                            </p>
+                        
+                        
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">
+                                "The level of professionalism and expertise they bring to the table is outstanding. I felt supported at every step and truly appreciated their transparent and personalized approach."
+                            </p>
+                            
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">
+                                "Working with this team has been a game-changer. Their insights and dedication helped me navigate complex challenges with ease. I highly recommend their services!"
+                            </p>
+                            
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">
+                                "The service exceeded my expectations. Their team was professional, responsive, and truly cared about delivering results. I'm incredibly satisfied with the experience!"
+                            </p>
+                            
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">
+                                <h4 class="text-white"><i class="fas fa-search-dollar me-3"></i>DhanTrader</h4>
+                                <!-- <img src="img/logo.png" alt="Logo"> -->
+                            </a>
+                            <p class="mb-4">
+                                DhanTrader is your trusted partner in the world of online trading. We provide expert insights, up-to-date market news, and powerful tools to help you navigate the stock market with confidence.
+                            </p>
+                            <div class="d-flex">
+                                <a href="#" class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2">
+                                    <i class="fas fa-apple-alt text-white"></i>
+                                    <div class="ms-3">
+                                        <small class="text-white">Download on the</small>
+                                        <h6 class="text-white">App Store</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
+                                    <i class="fas fa-play text-primary"></i>
+                                    <div class="ms-3">
+                                        <small class="text-white">Get it on</small>
+                                        <h6 class="text-white">Google Play</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Feature</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Attractions</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Tickets</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Blog</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Support</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Disclaimer</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Support</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Help</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Contact Info</h4>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">123 Street New York.USA</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">(+012) 3456 7890</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fab fa-firefox-browser text-primary me-3"></i>
+                                <p class="text-white mb-0">Yoursite@ex.com</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
